@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        DOCKERHUB_CREDENTIALS = credentials('docker-hub-credentials')
+        DOCKERHUB_CREDENTIALS = credentials('dockerhub')
         IMAGE_NAME = 'rishavkapil/web-image'
         GIT_REPO = 'https://github.com/Rishavkapil/push-image-to-dockerhub.git'
         BRANCH = 'main'  // Change this to your branch name
